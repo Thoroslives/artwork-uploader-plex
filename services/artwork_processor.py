@@ -160,6 +160,10 @@ class ArtworkProcessor:
                 if result.startswith('✅') or result.startswith('♻️'):
                     self.callbacks.success(1)
 
+            # Track artwork left alone because its Plex field was locked
+                elif result.startswith('🔒'):
+                    self.callbacks.locked(1)
+
             # Log the result
                 self.callbacks.log(result)
 
