@@ -15,8 +15,13 @@ snapshot and diff are read-only. restore writes to Plex only with --apply.
 """
 
 import json
+import os
 import sys
 import time
+
+# Allow running as a plain script (python3 tools/poster_snapshot.py) by putting the app root,
+# not tools/, on the import path so `core`/`plexapi` resolve the same as they do for the app.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from plexapi.server import PlexServer
 
