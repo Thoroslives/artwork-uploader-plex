@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"><rect width="64" height="64" rx="14" fill="#20242A"/><rect x="10" y="15" width="44" height="34" rx="5" fill="none" stroke="#EBA43B" stroke-width="5"/><path d="M32 20l-11 13h6.5v11h9V33H43z" fill="#EBA43B"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+    <title>Artwork Uploader for Plex</title>
+    <!-- The simplified mark, for wherever the icon is drawn small. A browser tab
+         renders an SVG favicon at 16 pixels, and at that size the perforations of
+         the full mark merge into the frame and the arrow disappears. The .ico
+         keeps the full drawing from 32 up. -->
+
+    <!-- Tile -->
+    <rect width="64" height="64" rx="14" fill="#20242A"/>
+
+    <!-- Film strip frame -->
+    <rect x="10" y="15" width="44" height="34" rx="5" fill="none" stroke="#EBA43B" stroke-width="5"/>
+
+    <!-- Upload arrow -->
+    <path d="M32 20l-11 13h6.5v11h9V33H43z" fill="#EBA43B"/>
+</svg>
